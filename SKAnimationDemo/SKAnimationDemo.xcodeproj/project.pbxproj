@@ -10,11 +10,11 @@
 		039D45AF2019812C0003E480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 039D45AE2019812C0003E480 /* main.m */; };
 		039D45B22019812C0003E480 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 039D45B12019812C0003E480 /* AppDelegate.m */; };
 		039D45B52019812C0003E480 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039D45B42019812C0003E480 /* ViewController.m */; };
-		039D45B82019812C0003E480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039D45B62019812C0003E480 /* Main.storyboard */; };
 		039D45BA2019812C0003E480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039D45B92019812C0003E480 /* Assets.xcassets */; };
 		039D45BD2019812C0003E480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039D45BB2019812C0003E480 /* LaunchScreen.storyboard */; };
 		039D45C82019812D0003E480 /* SKAnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039D45C72019812D0003E480 /* SKAnimationDemoTests.m */; };
 		039D45D32019812D0003E480 /* SKAnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039D45D22019812D0003E480 /* SKAnimationDemoUITests.m */; };
+		11645595201AC6EB00B968FB /* BasicAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645594201AC6EB00B968FB /* BasicAniViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		039D45B12019812C0003E480 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		039D45B32019812C0003E480 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		039D45B42019812C0003E480 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		039D45B72019812C0003E480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		039D45B92019812C0003E480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039D45BC2019812C0003E480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039D45BE2019812C0003E480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		039D45CE2019812D0003E480 /* SKAnimationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKAnimationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		039D45D22019812D0003E480 /* SKAnimationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKAnimationDemoUITests.m; sourceTree = "<group>"; };
 		039D45D42019812D0003E480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11645591201AC52500B968FB /* animation.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = animation.pch; sourceTree = "<group>"; };
+		11645593201AC6EB00B968FB /* BasicAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicAniViewController.h; sourceTree = "<group>"; };
+		11645594201AC6EB00B968FB /* BasicAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicAniViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,6 @@
 				039D45B12019812C0003E480 /* AppDelegate.m */,
 				039D45B32019812C0003E480 /* ViewController.h */,
 				039D45B42019812C0003E480 /* ViewController.m */,
-				039D45B62019812C0003E480 /* Main.storyboard */,
 				039D45B92019812C0003E480 /* Assets.xcassets */,
 				039D45BB2019812C0003E480 /* LaunchScreen.storyboard */,
 				039D45BE2019812C0003E480 /* Info.plist */,
@@ -119,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				039D45AE2019812C0003E480 /* main.m */,
+				11645591201AC52500B968FB /* animation.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,48 +146,18 @@
 		039D45E0201983120003E480 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				039D45E1201983120003E480 /* SKAnimationGroup */,
-				039D45E2201983120003E480 /* SKBasicAnimation */,
-				039D45E3201983120003E480 /* SKKeyFrameAnimation */,
-				039D45E4201983120003E480 /* SKSpringAnimation */,
-				039D45E5201983120003E480 /* SKTransition */,
+				11645592201AC6C600B968FB /* BasicAnimationVC */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
 		};
-		039D45E1201983120003E480 /* SKAnimationGroup */ = {
+		11645592201AC6C600B968FB /* BasicAnimationVC */ = {
 			isa = PBXGroup;
 			children = (
+				11645593201AC6EB00B968FB /* BasicAniViewController.h */,
+				11645594201AC6EB00B968FB /* BasicAniViewController.m */,
 			);
-			path = SKAnimationGroup;
-			sourceTree = "<group>";
-		};
-		039D45E2201983120003E480 /* SKBasicAnimation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SKBasicAnimation;
-			sourceTree = "<group>";
-		};
-		039D45E3201983120003E480 /* SKKeyFrameAnimation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SKKeyFrameAnimation;
-			sourceTree = "<group>";
-		};
-		039D45E4201983120003E480 /* SKSpringAnimation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SKSpringAnimation;
-			sourceTree = "<group>";
-		};
-		039D45E5201983120003E480 /* SKTransition */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SKTransition;
+			path = BasicAnimationVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +227,7 @@
 				TargetAttributes = {
 					039D45A92019812C0003E480 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 7DC4XMJV5E;
+						DevelopmentTeam = R9LD73WP5P;
 						ProvisioningStyle = Automatic;
 					};
 					039D45C22019812C0003E480 = {
@@ -299,7 +271,6 @@
 			files = (
 				039D45BD2019812C0003E480 /* LaunchScreen.storyboard in Resources */,
 				039D45BA2019812C0003E480 /* Assets.xcassets in Resources */,
-				039D45B82019812C0003E480 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11645595201AC6EB00B968FB /* BasicAniViewController.m in Sources */,
 				039D45B52019812C0003E480 /* ViewController.m in Sources */,
 				039D45B22019812C0003E480 /* AppDelegate.m in Sources */,
 				039D45AF2019812C0003E480 /* main.m in Sources */,
@@ -362,14 +334,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		039D45B62019812C0003E480 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				039D45B72019812C0003E480 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		039D45BB2019812C0003E480 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -475,7 +439,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7DC4XMJV5E;
+				DEVELOPMENT_TEAM = R9LD73WP5P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SKAnimationDemo/animation.pch";
 				INFOPLIST_FILE = SKAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.www.SKAnimationDemo;
@@ -487,7 +452,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7DC4XMJV5E;
+				DEVELOPMENT_TEAM = R9LD73WP5P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SKAnimationDemo/animation.pch";
 				INFOPLIST_FILE = SKAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexander.www.SKAnimationDemo;
@@ -564,6 +530,7 @@
 				039D45D92019812D0003E480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		039D45DA2019812D0003E480 /* Build configuration list for PBXNativeTarget "SKAnimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +539,7 @@
 				039D45DC2019812D0003E480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		039D45DD2019812D0003E480 /* Build configuration list for PBXNativeTarget "SKAnimationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +548,7 @@
 				039D45DF2019812D0003E480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
