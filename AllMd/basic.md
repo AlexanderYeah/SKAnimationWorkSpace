@@ -4,8 +4,8 @@
     
 * STEP2  设置fromValue  和 toValue   
 * STEP3  动画的相关属性
-![](/Users/alexander/Desktop/AboutiOS/SKGit/SKAnimationWorkSpace/AllMd/basic.jpg)    
+![](https://github.com/AlexanderYeah/SKAnimationWorkSpace/blob/master/AllMd/basic.jpg)    
 
 
-![](/Users/alexander/Desktop/AboutiOS/SKGit/SKAnimationWorkSpace/AllMd/basic2.jpg)
+![](https://github.com/AlexanderYeah/SKAnimationWorkSpace/blob/master/AllMd/basic2.jpg)
 
