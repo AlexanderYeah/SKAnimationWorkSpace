@@ -1,0 +1,2 @@
+# Keyframe 动画  
+和CABasicAnimation的区别：CABasicAnimation只能从一个数值(fromValue)变到另一个数值(toValue)，而CAKeyframeAnimation会使用一个NSArray（values）保存这些数值，实现多个点间的动画效果，CABasicAnimation可看做是最多只有2个关键帧的CAKeyframeAnimation

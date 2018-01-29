@@ -15,6 +15,7 @@
 		039D45C82019812D0003E480 /* SKAnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039D45C72019812D0003E480 /* SKAnimationDemoTests.m */; };
 		039D45D32019812D0003E480 /* SKAnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039D45D22019812D0003E480 /* SKAnimationDemoUITests.m */; };
 		11645595201AC6EB00B968FB /* BasicAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645594201AC6EB00B968FB /* BasicAniViewController.m */; };
+		11645598201EADB700B968FB /* KeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645597201EADB700B968FB /* KeyFrameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		11645591201AC52500B968FB /* animation.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = animation.pch; sourceTree = "<group>"; };
 		11645593201AC6EB00B968FB /* BasicAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicAniViewController.h; sourceTree = "<group>"; };
 		11645594201AC6EB00B968FB /* BasicAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicAniViewController.m; sourceTree = "<group>"; };
+		11645596201EADB700B968FB /* KeyFrameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyFrameViewController.h; sourceTree = "<group>"; };
+		11645597201EADB700B968FB /* KeyFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyFrameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 			children = (
 				11645593201AC6EB00B968FB /* BasicAniViewController.h */,
 				11645594201AC6EB00B968FB /* BasicAniViewController.m */,
+				11645596201EADB700B968FB /* KeyFrameViewController.h */,
+				11645597201EADB700B968FB /* KeyFrameViewController.m */,
 			);
 			path = BasicAnimationVC;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11645598201EADB700B968FB /* KeyFrameViewController.m in Sources */,
 				11645595201AC6EB00B968FB /* BasicAniViewController.m in Sources */,
 				039D45B52019812C0003E480 /* ViewController.m in Sources */,
 				039D45B22019812C0003E480 /* AppDelegate.m in Sources */,

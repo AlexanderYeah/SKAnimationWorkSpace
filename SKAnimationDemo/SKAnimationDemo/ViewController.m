@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BasicAniViewController.h"
+#import "KeyFrameViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,7 +18,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-	NSArray *menuArr = @[@"基础动画",@"柱状图",@"折线图",@"Pulse",@"Shake",@"Swing",@"Snap",@"Bounce2",@"Expand",@"Hinge",@"Drop"];
+	NSArray *menuArr = @[@"基础动画",@"kf动画",@"折线图",@"Pulse",@"Shake",@"Swing",@"Snap",@"Bounce2",@"Expand",@"Hinge",@"Drop"];
 	CGFloat btn_padding = 30;
 	CGFloat btn_w = (SCREEN_WIDTH - 5 * btn_padding)/4;
 	CGFloat btn_h = 35;
@@ -66,7 +67,10 @@
     break;
     case 1:{
 		// Sample2
-
+		KeyFrameViewController *keyVC = [[KeyFrameViewController alloc]init];
+		keyVC.navigationItem.title = @"KeyFrame动画";
+		keyVC.view.backgroundColor = [UIColor whiteColor];
+		[self.navigationController pushViewController:keyVC animated:YES];
 		
 	}
 	break;
