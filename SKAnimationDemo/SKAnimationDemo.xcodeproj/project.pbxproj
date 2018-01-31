@@ -16,6 +16,8 @@
 		039D45D32019812D0003E480 /* SKAnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039D45D22019812D0003E480 /* SKAnimationDemoUITests.m */; };
 		11645595201AC6EB00B968FB /* BasicAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645594201AC6EB00B968FB /* BasicAniViewController.m */; };
 		11645598201EADB700B968FB /* KeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645597201EADB700B968FB /* KeyFrameViewController.m */; };
+		11645691202150EB00B968FB /* GroupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11645690202150EB00B968FB /* GroupAnimationViewController.m */; };
+		116456942021585E00B968FB /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116456932021585E00B968FB /* TransitionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		11645594201AC6EB00B968FB /* BasicAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicAniViewController.m; sourceTree = "<group>"; };
 		11645596201EADB700B968FB /* KeyFrameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyFrameViewController.h; sourceTree = "<group>"; };
 		11645597201EADB700B968FB /* KeyFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyFrameViewController.m; sourceTree = "<group>"; };
+		1164568F202150EB00B968FB /* GroupAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupAnimationViewController.h; sourceTree = "<group>"; };
+		11645690202150EB00B968FB /* GroupAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupAnimationViewController.m; sourceTree = "<group>"; };
+		116456922021585E00B968FB /* TransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
+		116456932021585E00B968FB /* TransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,10 @@
 				11645594201AC6EB00B968FB /* BasicAniViewController.m */,
 				11645596201EADB700B968FB /* KeyFrameViewController.h */,
 				11645597201EADB700B968FB /* KeyFrameViewController.m */,
+				1164568F202150EB00B968FB /* GroupAnimationViewController.h */,
+				11645690202150EB00B968FB /* GroupAnimationViewController.m */,
+				116456922021585E00B968FB /* TransitionViewController.h */,
+				116456932021585E00B968FB /* TransitionViewController.m */,
 			);
 			path = BasicAnimationVC;
 			sourceTree = "<group>";
@@ -301,8 +311,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11645598201EADB700B968FB /* KeyFrameViewController.m in Sources */,
+				116456942021585E00B968FB /* TransitionViewController.m in Sources */,
 				11645595201AC6EB00B968FB /* BasicAniViewController.m in Sources */,
 				039D45B52019812C0003E480 /* ViewController.m in Sources */,
+				11645691202150EB00B968FB /* GroupAnimationViewController.m in Sources */,
 				039D45B22019812C0003E480 /* AppDelegate.m in Sources */,
 				039D45AF2019812C0003E480 /* main.m in Sources */,
 			);

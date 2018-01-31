@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "BasicAniViewController.h"
 #import "KeyFrameViewController.h"
+#import "GroupAnimationViewController.h"
+#import "TransitionViewController.h"
 @interface ViewController ()
 
 @end
@@ -18,7 +20,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-	NSArray *menuArr = @[@"基础动画",@"kf动画",@"折线图",@"Pulse",@"Shake",@"Swing",@"Snap",@"Bounce2",@"Expand",@"Hinge",@"Drop"];
+	NSArray *menuArr = @[@"基础动画",@"key动画",@"组动画",@"转场动画",@"Shake",@"Swing",@"Snap",@"Bounce2",@"Expand",@"Hinge",@"Drop"];
 	CGFloat btn_padding = 30;
 	CGFloat btn_w = (SCREEN_WIDTH - 5 * btn_padding)/4;
 	CGFloat btn_h = 35;
@@ -62,7 +64,6 @@
 		basicVC.navigationItem.title = @"基础动画";
 		basicVC.view.backgroundColor = [UIColor whiteColor];
 		[self.navigationController pushViewController:basicVC animated:YES];
-		
 	}
     break;
     case 1:{
@@ -71,18 +72,20 @@
 		keyVC.navigationItem.title = @"KeyFrame动画";
 		keyVC.view.backgroundColor = [UIColor whiteColor];
 		[self.navigationController pushViewController:keyVC animated:YES];
-		
 	}
 	break;
 	case 2:{
-		
-
-	
+		GroupAnimationViewController *gpVC = [[GroupAnimationViewController alloc]init];
+		gpVC.navigationItem.title = @"组动画";
+		gpVC.view.backgroundColor = [UIColor whiteColor];
+		[self.navigationController pushViewController:gpVC animated:YES];
 	}
 	break;
 	case 3:{
-		
-	
+		TransitionViewController *tranVC = [[TransitionViewController alloc]init];
+		tranVC.view.backgroundColor = [UIColor whiteColor];
+		tranVC.title = @"过渡动画";
+		[self.navigationController pushViewController:tranVC animated:YES];
 	}
 	break;
 	case 4:{
